@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/master.css">
+
+    <title>Voice File Reference</title>
+  </head>
+  <body>
+
+	<div class="container-fluid col-md-10 offset-md-1" id="content">
+
+  	  <h1>Voice Reference Tool</h1>
+	  
+		<div class="row">
+			<!-- Menu -->
+			<div class="col-md-4 offset-md-4">
+				<div class="btn btn-block btn-primary" id="importFileBtn">
+					Importer
+				</div>
+				<input type="file" name="exportedDialogue" value="" id="fileToImport" hidden>
+			</div>
+			<hr>
+		</div>
+		<div class="row">
+			<div id="columnChecker">
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 table-responsive">
+				<table class="table table-bordered table-hover table-sm" id="dialogueTable">
+					<thead>
+						<tr>
+							<th onclick="sortTable(0)" scope="col">#</th>
+							<th onclick="sortTable(1)" scope="col">First</th>
+							<th onclick="sortTable(2)" scope="col">Last</th>
+							<th onclick="sortTable(3)" scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+	<script src="/js/vfr_script.js"></script>
+  </body>
+</html>
